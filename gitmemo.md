@@ -37,3 +37,9 @@ $ `git switch -c <ブランチ名>`
 $ `git merge <ブランチ名>` 
 * マージ済みブランチを削除 
 $ `git branch -d <ブランチ名>`
+### 既存の Git ローカルリポジトリを新規 GitHub リモートリポジトリに登録
+* GitHub に空の新規リポジトリを作成 
+ 既存のローカルリポジトリにGitHubの空のリモートリポジトリをエイリアス名「origin」として登録する。 
+$ `git remote add origin …` 
+* 登録したリモートリポジトリへ、ローカルリポジトリの内容を反映すると同時に、上流ブランチを設定する。 
+$ `git push -u origin main` 
